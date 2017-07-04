@@ -272,7 +272,7 @@ rm debian7x64.sh
 rm ./debian7x64.sh
 
 #clear
-echo "========================================"  
+echo "========================================"| lolcat  
 echo "SCRIPT PREMIUM Modified by DikaNET"| lolcat 
 echo "----------------------------------------"| lolcat
 echo ""  | tee -a log-install.txt
