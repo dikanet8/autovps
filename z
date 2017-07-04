@@ -18,7 +18,7 @@ useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $uname
 exp="$(chage -l $uname | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$pass\n$pass\n"|passwd $uname &> /dev/null
 echo -e ""| lolcat
-echo -e "______-  Akun SSH baru Berhasil Dibuat -______" | lolcat
+echo -e "++++++++ Akun SSH baru Berhasil Dibuat +++++++" | lolcat
 echo -e "==============================================" | lolcat
 echo -e "  Host: $myip" | lolcat
 echo -e "  Username: $uname" | lolcat
@@ -30,7 +30,7 @@ echo -e "  Port OpenVPN default: 55            " | lolcat
 echo -e "  Auto kill user maximal login 2      " | lolcat
 echo -e "----------------------------------------------" | lolcat
 echo -e "  Masa Aktif Sampai: $exp                  " | lolcat
-echo -e "==============================================" | lolcat
+echo -e "++++++++++++++++++++++++++++++++++++++++++++++" | lolcat
 myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
 echo -e "   Config OVPN:                          "| lolcat
 echo -e "   http://$myip:81/1194-client.ovpn          " | lolcat
@@ -205,19 +205,19 @@ echo "-------------------------------" | lolcat
 
 
 clear
-echo "  +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
-echo "  +                 >>>>>>>>>>Script Menu Premium DikaNET<<<<<<<<<<             +" | lolcat
-echo "  +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
-echo "  +                                SELAMAT DATANG                               +" | lolcat 
-echo "  +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
-echo "  +             >>>>>>>>> SCRIPT BY : AIDIKA AKBAR | @MITRA SSH<<<<<<<<<        +" | lolcat
-echo "  +                                                                             +" | lolcat
-echo "  +         MY CONTACT PERSON :                                                 +" | lolcat
-echo "  +         WA  : 082228644803                                                  +" | lolcat
-echo "  +         BBM : D69F79CA                                                      +" | lolcat
-echo "  +         FB  : https://web.facebook.com/profile.php?id=100004702428501       +" | lolcat
-echo "  +                                                                             +" | lolcat
-echo "  +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat                      
+echo "  +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
+echo "  +                 >>>>>>>>>>Script Menu Premium DikaNET<<<<<<<<<<           +" | lolcat
+echo "  +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
+echo "  +                                SELAMAT DATANG                             +" | lolcat 
+echo "  +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
+echo "  +            >>>>>>>>> SCRIPT BY : AIDIKA AKBAR | @MITRA SSH<<<<<<<<<       +" | lolcat
+echo "  +                                                                           +" | lolcat
+echo "  +         MY CONTACT PERSON :                                               +" | lolcat
+echo "  +         WA  : 082228644803                                                +" | lolcat
+echo "  +         BBM : D69F79CA                                                    +" | lolcat
+echo "  +         FB  : Dika Net                                                    +" | lolcat
+echo "  +                                                                           +" | lolcat
+echo "  +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat                      
 PS3='Silahkan ketik Nomor pilihan anda lalu tekan ENTER: '
 options=("Buat User" "Trial" "Perbarui User" "Semua User" "Hapus User" "Cek Login" "On Kill Multi Login" "Off Kill Multi Login" "User Belum Exp" "User Sudah Exp" "Restart Server" "Ganti Password User" "Ganti Password VPS" "Used Data By Users" "bench-network" "Ram Status" "Bersihkan cache ram" "Ganti Port OpenVPN" "Ganti Port Dropbear" "Ganti Port Openssh" "Ganti Port Squid3" "Speedtest" "Edit Banner Login" "Lihat Lokasi User" "Quit")
 select opt in "${options[@]}"
