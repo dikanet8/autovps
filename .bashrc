@@ -138,4 +138,4 @@ clear
      echo -e "   #              Copyright by.MitraSSH @2017                     #" | lolcat
      echo -e "   #=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+=+=+=+=#" | lolcat
 echo -e ""
-echo -e " Ketik "menu" untuk memberi perintah VPS anda" | lolcat 
+echo -e " Ketik 'menu' untuk memberi perintah VPS anda" | lolcat 
