@@ -126,13 +126,13 @@ red='\e[1;32m'
 #echo -e $green
 #echo -e $red     '_________________<☠ CINTA JANGAN BIARKAN SEDIH ☠>_________________'
 clear
-       echo -e "#=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+#" | lolcat
-       echo -e "#                   SCRIPT PREMIUM BY: AIDIKA AKBAR | @MitraSSH          #" | lolcat
-       echo -e "#                                                                        #" | lolcat
-       echo -e "#         MY CONTACT PERSON :                                            #" | lolcat
+                         echo -e "#=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+#" | lolcat
+                         echo -e "#                   SCRIPT PREMIUM BY: AIDIKA AKBAR | @MitraSSH          #" | lolcat
+                         echo -e "#                                                                        #" | lolcat
+                         echo -e "#         MY CONTACT PERSON :                                            #" | lolcat
 			 echo -e "#         Whatsapp : 082228644803                                        #" | lolcat
 			 echo -e "#         Facebook : Dika Net                                            #" | lolcat
-			 echo -e "# 	      Pin-BBM  : -                                                   #" | lolcat
+			 echo -e "# 	    Pin-BBM  : -                                                   #" | lolcat
 			 echo -e "#         Email    : aidikaakbara@gmail.com                              #" | lolcat
 			 echo -e "#                                                                        #" | lolcat
 			 echo -e "#                                                                        #" | lolcat
