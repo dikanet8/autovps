@@ -74,7 +74,7 @@ chmod 0640 /etc/squid3/squid.conf
 # text warna
 cd
 rm -rf .bashrc
-wget https://raw.githubusercontent.com/267010/bajingan/master/text%20warna/.bashrc
+wget https://raw.githubusercontent.com/AidikaAA/autovps/master/.bashrc
 
 # text pelangi
 apt-get install ruby -y
@@ -230,7 +230,7 @@ chmod +x speedtest.py
 
 # Install Menu
 cd
-wget "https://raw.githubusercontent.com/267010/bajingan/master/menu/z"
+wget "https://raw.githubusercontent.com/AidikaAA/autovps/master/z"
 mv ./z /usr/local/bin/menu
 chmod +x /usr/local/bin/menu
 
@@ -285,7 +285,7 @@ echo "Timezone : Asia/Jakarta"| lolcat
 echo "Fail2Ban : [on]"| lolcat
 echo "Edited by: Dika NET"| lolcat
 echo "Telpon   : 082228644803"| lolcat  
-echo "WA       :082228644803 "| lolcat
+echo "WA       : 082228644803 "| lolcat
 echo ""
 echo "Auto kill Multy Login Maximal Login 2"  | lolcat
 echo "Auto Install Virtual Ram 1 gb"| lolcat
