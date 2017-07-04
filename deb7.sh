@@ -230,8 +230,8 @@ chmod +x speedtest.py
 
 # Install Menu
 cd
-wget "https://raw.githubusercontent.com/AidikaAA/autovps/master/a"
-mv ./a /usr/local/bin/menu
+wget "https://raw.githubusercontent.com/AidikaAA/autovps/master/z"
+mv ./z /usr/local/bin/menu
 chmod +x /usr/local/bin/menu
 
 # swap ram
