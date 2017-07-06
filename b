@@ -211,16 +211,14 @@ echo " "
 echo " "
 echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
 echo "+                               SELAMAT DATANG                            +" | lolcat
-echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
+echo "+=========================================================================+" | lolcat
 echo "+                     Script Premium Modified by DikaNET                  +" | lolcat 
 echo "+                            << Contact Person >>                         +" | lolcat
 echo "+             Facebook : Dika Net                                         +" | lolcat
 echo "+             BBM : D69F79CA                                              +" | lolcat
 echo "+             WA : 082228644803                                           +" | lolcat
 echo "              Telegam : @dikanet                                          +" | lolcat
-echo "                                                                          +" | lolcat
 echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
-echo " "
 echo "===========================================================================" | lolcat
 echo "                        >>>>>>>>>> Menu Premium <<<<<<<<<<                 " | lolcat
 echo "===========================================================================" | lolcat                      
