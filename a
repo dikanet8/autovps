@@ -18,7 +18,7 @@ useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $uname
 exp="$(chage -l $uname | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$pass\n$pass\n"|passwd $uname &> /dev/null
 echo -e "=========================================" | lolcat
-echo -e ">>>>>          Data Akun SSH        <<<<<" | lolcat
+echo -e ">>>>          Data Akun SSH          <<<<" | lolcat
 echo -e "=========================================" | lolcat
 echo -e " Host: $myip" | lolcat
 echo -e " Username: $uname" | lolcat
