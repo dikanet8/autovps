@@ -18,7 +18,7 @@ useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $uname
 exp="$(chage -l $uname | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$pass\n$pass\n"|passwd $uname &> /dev/null
 echo -e ""| lolcat
-echo -e ++++++ Akun SSH baru Berhasil Dibuat +++++" | lolcat
+echo -e ++++++ Akun SSH Baru Berhasil Dibuat +++++" | lolcat
 echo -e "=========================================" | lolcat
 echo -e " Host: $myip" | lolcat
 echo -e " Username: $uname" | lolcat
@@ -31,11 +31,19 @@ echo -e " Auto kill user maximal login 2      " | lolcat
 echo -e "-----------------------------------------" | lolcat
 echo -e "Masa Aktif Sampai: $exp                  " | lolcat
 echo -e "+++++++++++++++++++++++++++++++++++++++++" | lolcat
+echo -e "            Peraturan Server             " | lolcat
+echo -e "1. Dilarang Carding, Torrent, DDOS, 
+echo -e "   Spamming dan Ilegal Lainnya
+echo -e "2. Max Login 2 Bitvise/Plink
+echo -e "+++++++++++++++++++++++++++++++++++++++++" | lolcat
+echo -e "     PELANGGARAN YANG DILAKUKAN AKAN 
+echo -e "       MEMBUAT AKUN ANDA DIBANNED
+echo -e "+++++++++++++++++++++++++++++++++++++++++" | lolcat
 myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
 echo -e "   Config OVPN:                          "| lolcat
 echo -e "   http://$myip:81/1194-client.ovpn          " | lolcat
 echo -e "-----------------------------------------" | lolcat
-echo -e "+++++++SCRIPT PREMIUM OLEH : DIKANET++++++"| lolcat
+echo -e "======SCRIPT PREMIUM OLEH : DIKANET======" | lolcat
 }
 function renew_user() {
 	echo "Kadaluarsa User: $uname Di Perbarui Sampai: $expdate"| lolcat;
@@ -123,9 +131,9 @@ do
 done
 
 echo "-------------------------------------------------------------"| lolcat
-echo -e "==============[ CEK LOGIN DROPBEAR DAN OpenSSH]=============="| lolcat
+echo -e "==============[CEK LOGIN DROPBEAR DAN OpenSSH]=============="| lolcat
 echo -e " "
-echo -e "=============== [ Script Modified By DikaNET] ==============="| lolcat
+echo -e "============== [ Script Modified By DikaNET ] =============="| lolcat
 }
 
 function used_data(){
@@ -214,10 +222,7 @@ echo "+                               SELAMAT DATANG                            
 echo "+=========================================================================+" | lolcat
 echo "+                     Script Premium Modified by DikaNET                  +" | lolcat 
 echo "+                            << Contact Person >>                         +" | lolcat
-echo "+             Facebook : Dika Net                                         +" | lolcat
-echo "+             BBM : D69F79CA                                              +" | lolcat
-echo "+             WA : 082228644803                                           +" | lolcat
-echo "              Telegam : @dikanet                                          +" | lolcat
+echo "+                       BBM :D69F79CA WA :082228644803                    +" | lolcat 
 echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
 echo "===========================================================================" | lolcat
 echo "                        >>>>>>>>>> Menu Premium <<<<<<<<<<                 " | lolcat
