@@ -129,7 +129,7 @@ clear
 echo -e "=============================================================================" | lolcat
 echo -e "+++                            WELLCOME TO MY SERVER                      +++" | lolcat
 echo -e "=============================================================================" | lolcat
-echo -e " "
+echo -e "                                                                             " | lolcat
 echo -e "#=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=#" | lolcat
 echo -e "#                       Script Premium Modefied BY: DikaNET                 #" | lolcat
 echo -e "#===========================================================================#" | lolcat
@@ -137,9 +137,8 @@ echo -e "#                             MY CONTACT PERSON :                      
 echo -e "#          Whatsapp : 082228644803                                          #" | lolcat
 echo -e "#          Facebook : Dika Net                                              #" | lolcat
 echo -e "# 	    Email : aidikaakbara@gmail.com                                   #" | lolcat
-echo -e "#          BBM :D69F79CA                                                    #" | lolcat
-echo -e "#                                                                           #" | lolcat
-echo -e "#                       Copyright by.MitraSSH @2017                         #" | lolcat
-echo -e "#=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+#" | lolcat
-echo -e " "
-echo -e " Ketik 'menu' untuk memberi perintah VPS anda" | lolcat 
+echo -e "#          Telegram : @dikanet                                              #" | lolcat 
+echo -e "#                                                                           #" | lolcat 
+echo -e "#                         Copyright DikaNET @2017                           #" | lolcat
+echo -e "#===========================================================================#" | lolcat
+echo -e "  Ketik "menu" untuk memberikan perintah pada VPS Anda" | lolcat 
