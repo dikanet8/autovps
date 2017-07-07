@@ -88,11 +88,6 @@ function not_expired_users(){
 }
 
 function monssh2(){
-echo "===========================================================================" | lolcat
-echo ">>>>>>>>>                     Cek Login Akun SSH                 <<<<<<<<<<" | lolcat
-echo "===========================================================================" | lolcat
-echo " "
-echo " "
 echo ""| lolcat
 echo "|   Tgl-Jam    | PID   |   User Name  |      Dari IP      |"| boxes -d peek | lolcat
 echo "-------------------------------------------------------------"| lolcat
@@ -148,11 +143,6 @@ echo -e "Sekian...!!!"| lolcat
 }
 
 function user-list(){
-echo "===============================================================================" | lolcat
-echo ">>>>>>>>>                    Daftar Akun SSH Aktif                    <<<<<<<<<" | lolcat
-echo "===============================================================================" | lolcat
-echo " "
-echo " "
 echo "--------------------------------------------------"| lolcat
 echo "BIL  USERNAME        STATUS       TGL KEDALUARSA   "| lolcat
 echo "--------------------------------------------------"| lolcat
