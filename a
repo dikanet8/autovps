@@ -93,7 +93,7 @@ echo "|   Tgl-Jam    | PID   |   User Name  |      Dari IP      |"| boxes -d pee
 echo "-------------------------------------------------------------"| lolcat
 data=( `ps aux | grep -i dropbear | awk '{print $2}'`);
 
-echo "=================[ CEK LOGIN DROPBEAR ]================="| lolcat
+echo "=================[ CEK LOGIN DROPBEAR ]======================"| lolcat
 echo "-------------------------------------------------------------"| lolcat
 for PID in "${data[@]}"
 do
