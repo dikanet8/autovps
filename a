@@ -42,7 +42,7 @@ echo -e "      PELANGGARAN YANG DILAKUKAN AKAN " | lolcat
 echo -e "        MEMBUAT AKUN ANDA DIBANNED" | lolcat
 echo -e "-------------- TERIMA KASIH -------------" | lolcat
 echo -e " "
-echo -e "========== Modified By DikaNET ==========="| lolcat
+echo -e "========== Modified By DikaNET ==========" | lolcat
 }
 function renew_user() {
 	echo "Kadaluarsa User: $uname Di Perbarui Sampai: $expdate"| lolcat;
@@ -112,11 +112,11 @@ do
 done
 
 
-echo "-------------------------------------------------------------"| lolcat
+echo "--------------------------------------------------------"| lolcat
 data=( `ps aux | grep "\[priv\]" | sort -k 72 | awk '{print $2}'`);
 
 echo "==================[ CEK LOGIN OpenSSH ]================="| lolcat
-echo "-------------------------------------------------------------"| lolcat
+echo "--------------------------------------------------------"| lolcat
 for PID in "${data[@]}"
 do
         #echo "check $PID";
@@ -129,10 +129,10 @@ do
         fi
 done
 
-echo "-------------------------------------------------------------"| lolcat
-echo -e "==============[ MONITOR PENGGUNA DROPBEAR dan OpenSSH]============="| lolcat
+echo "--------------------------------------------------------"| lolcat
+echo -e "========[ MONITOR PENGGUNA DROPBEAR & OpenSSH]=========="| lolcat
 echo -e " "
-echo -e "====================== Modified By DikaNET ========================"| lolcat
+echo -e "================= Modified By DikaNET =================="| lolcat
 }
 
 function used_data(){
@@ -214,6 +214,8 @@ echo "-------------------------------" | lolcat
 
 
 clear
+echo " "
+echo " "
 echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
 echo "+                               SELAMAT DATANG                            +" | lolcat
 echo "+=========================================================================+" | lolcat
@@ -222,6 +224,9 @@ echo "+                            << Contact Person >>                         
 echo "+                       BBM :D69F79CA WA :082228644803                    +" | lolcat
 echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
 echo " "
+echo "                               Informasi Server                            " | lolcat
+echo " IP\Host : $myip
+echo " Date    : $date
 echo "===========================================================================" | lolcat
 echo "                        >>>>>>>>>> Menu Premium <<<<<<<<<<                 " | lolcat
 echo "===========================================================================" | lolcat                     
