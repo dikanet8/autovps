@@ -95,7 +95,7 @@ echo "|   Tgl-Jam    | PID   |   User Name  |      Dari IP      |"| boxes -d pee
 echo "-------------------------------------------------------------"| lolcat
 data=( `ps aux | grep -i dropbear | awk '{print $2}'`);
 
-echo "=================[ Checking Dropbear login ]================="| lolcat
+echo "=====================[ CEK LOGIN DROPBEAR ]=================="| lolcat
 echo "-------------------------------------------------------------"| lolcat
 for PID in "${data[@]}"
 do
@@ -113,7 +113,7 @@ done
 echo "-------------------------------------------------------------"| lolcat
 data=( `ps aux | grep "\[priv\]" | sort -k 72 | awk '{print $2}'`);
 
-echo "==================[ Checking OpenSSH login ]================="| lolcat
+echo "=====================[ CEK LOGIN OpenSSH ]==================="| lolcat
 echo "-------------------------------------------------------------"| lolcat
 for PID in "${data[@]}"
 do
@@ -128,7 +128,9 @@ do
 done
 
 echo "-------------------------------------------------------------"| lolcat
-echo -e "==============[ User Monitor Dropbear & OpenSSH]============="| lolcat
+echo -e "=========[ MONITOR PENGGUNA DROPBEAR & OpenSSH]==========="| lolcat
+echo -e " "
+echo -e "================== Modified By DikaNET ==================="| lolcat
 }
 
 function used_data(){
@@ -144,7 +146,7 @@ echo -e "Sekian...!!!"| lolcat
 
 function user-list(){
 echo "--------------------------------------------------"| lolcat
-echo "BIL  USERNAME        STATUS       EXP DATE   "| lolcat
+echo "BIL  USERNAME        STATUS        TGL KEDALUARSA "| lolcat
 echo "--------------------------------------------------"| lolcat
 C=1
 ON=0
@@ -210,21 +212,19 @@ echo "-------------------------------" | lolcat
 
 
 clear
-echo ""
-echo "                                              .::!!!!!!!:." | lolcat
-echo "             .!!!!!:.                       .:!!!!!!!!!!!!" | lolcat
-echo "             ----!!!!!!.                .:!!!!!!!!!XUWWXXX" | lolcat
-echo "                 :XXNWX!!:          .:!!!!!!XUWWXXXXXXXXXP" | lolcat
-echo "                 XXXXXXXWX!:     .<!!!!XXXXXX*  XXXXXXXXX" | lolcat
-echo "                 XXXXX  XXXUX  :!!XXXXXXXXXXX   XXXXXX*" | lolcat
-echo "                 ^XXXB  XXXX\    XXXXXXXXXXXX   DXXR*" | lolcat
-echo "                   ^*XBDXXXX      *XXXXXXXXXXXXXX*" | lolcat
-echo "                        ****         *******" | lolcat
-echo "" | lolcat
-echo "SESUATU AKAN SANGAT BERHARGA KETIKA KITA SUDAH KEHILANGANNYA , ITULAH HIDUP" | lolcat
-echo "                           ENJOY YOUR LIFE " | lolcat
-echo " " | lolcat
-echo " " | lolcat
+echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
+echo "+                               SELAMAT DATANG                            +" | lolcat
+echo "+=========================================================================+" | lolcat
+echo "+                     Script Premium Modified by DikaNET                  +" | lolcat 
+echo "+                           <<= Contact Person =>>                        +" | lolcat
+echo "+                       BBM :D69F79CA WA :082228644803                    +" | lolcat
+echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
+echo " "
+echo "                               Informasi Server                            " | lolcat
+echo " IP\Host : $myip " | lolcat
+echo "===========================================================================" | lolcat
+echo "                       >>>>>>>>>> Menu Premium <<<<<<<<<<                  " | lolcat
+echo "===========================================================================" | lolcat
 PS3='Silahkan ketik nomor pilihan anda lalu tekan ENTER: '
 options=("Buat User" "Trial" "Perbarui User" "Semua User" "Hapus User" "Monitor User Login" "On Kill Multi Login" "Off Kill Multi Login" "User Belum Exp" "User Sudah Exp" "Restart Server" "Ganti Password User" "Ganti Password VPS" "Used Data By Users" "bench-network" "Ram Status" "Bersihkan cache ram" "Ganti Port OpenVPN" "Ganti Port Dropbear" "Ganti Port Openssh" "Ganti Port Squid3" "Speedtest" "Edit Banner Login" "Lihat Lokasi User" "Quit")
 select opt in "${options[@]}"
