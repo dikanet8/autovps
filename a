@@ -10,11 +10,6 @@ echo
 function create_user() {
 #myip=`dig +short myip.opendns.com @resolver1.opendns.com`
 clear
-echo -e "==========================================================================="| lolcat
-echo -e "<<<<<<<<<                        Buat Akun SSSH                  >>>>>>>>> "| lolcat
-echo -e "==========================================================================="| lolcat
-echo -e " "
-echo -e " "
 useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $uname
 exp="$(chage -l $uname | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$pass\n$pass\n"|passwd $uname &> /dev/null
@@ -35,11 +30,11 @@ echo -e "   Config OVPN:                          "| lolcat
 echo -e "  http://$myip:81/1194-client.ovpn          " | lolcat
 echo -e "-----------------------------------------" | lolcat
 echo -e "             Peraturan Server            " | lolcat
-echo -e "1. Dilarang Carding, Torrent, DDOS, " | lolcat 
-echo -e "   Spamming dan Ilegal Lainnya " | lolcat
+echo -e "1. Dilarang Carding, Torrent, DDOS,Spamming " | lolcat 
+echo -e "   dan Ilegal Lainnya " | lolcat
 echo -e "2. Max Login 2 Bitvise/Plink " |lolcat
 echo -e "-----------------------------------------" | lolcat
-echo -e "      PELANGGARAN YANG DILAKUKAN AKAN " | lolcat
+echo -e "     PELANGGARAN YANG DILAKUKAN AKAN " | lolcat
 echo -e "        MEMBUAT AKUN ANDA DIBANNED" | lolcat
 echo -e "-------------- TERIMA KASIH -------------" | lolcat
 echo -e " "
@@ -246,15 +241,27 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Buat User")
-       clear
+       echo -e " "
+       echo -e " "
+       echo -e "==========================================================================="| lolcat
+       echo -e "<<<<<<<<<                        Buat Akun SSH                  >>>>>>>>> "| lolcat
+       echo -e "==========================================================================="| lolcat
+       echo -e " "
+       echo -e " "
        read -p "Masukkan Username: " uname
        read -p "Masukkan Password: " pass
        read -p "Kadaluarsa (Berapa Hari): " masaaktif
-       clear
        create_user
 	    break
             ;;
 	"Trial")
+	echo -e " "
+        echo -e " "
+	echo -e "==========================================================================="| lolcat
+        echo -e "<<<<<<<<<                      Buat Akun Trial                   >>>>>>>>> "| lolcat
+        echo -e "==========================================================================="| lolcat
+        echo -e " "
+        echo -e " "
 	uname=trial-`</dev/urandom tr -dc X-Z0-9 | head -c4`
 	masaaktif="1"
 	pass=`</dev/urandom tr -dc a-f0-9 | head -c9`
@@ -263,17 +270,37 @@ do
 	break
 	;;
         "Perbarui User")
+	echo -e " "
+        echo -e " "
+	echo -e "==========================================================================="| lolcat
+        echo -e "<<<<<<<<<                     Perbarui User SSH                  >>>>>>>>> "| lolcat
+        echo -e "==========================================================================="| lolcat
+        echo -e " "
+        echo -e " "
             read -p "Masukkan Username yg di perbarui: " uname
             read -p "Aktif sampai tanggal Thn-Bln-Hr(YYYY-MM-DD): " expdate
             renew_user | boxes -d dog | lolcat
             break
             ;;
 	 "Semua User")
-	    clear
+	  echo -e " "
+          echo -e " "
+	    echo -e "==========================================================================="| lolcat
+            echo -e "<<<<<<<<<                        Buat Akun SSSH                  >>>>>>>>> "| lolcat
+            echo -e "==========================================================================="| lolcat
+            echo -e " "
+            echo -e " "
 	    user-list
 	    break
 	    ;;
         "Hapus User")
+	    echo -e " "
+            echo -e " "
+	    echo -e "==========================================================================="| lolcat
+            echo -e "<<<<<<<<<                       Hapus Akun SSSH                  >>>>>>>>> "| lolcat
+            echo -e "==========================================================================="| lolcat
+            echo -e " "
+            echo -e " "
 	    user-list
 	    echo ""
             read -p "Ketik user (di atas) yang akan di hapus: " uname 
