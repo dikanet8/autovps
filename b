@@ -212,8 +212,8 @@ echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
 echo "+                               SELAMAT DATANG                            +" | lolcat
 echo "+=========================================================================+" | lolcat
 echo "+                     Script Premium Modified by DikaNET                  +" | lolcat 
-echo "+                            << Contact Person >>                         +" | lolcat
-echo "+                       BBM :D69F79CA WA :082228644803                    +" | lolcat 
+echo "+                         << My Contact Person >>                         +" | lolcat
+echo "+                      BBM :D69F79CA WA :082228644803                     +" | lolcat 
 echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
 echo " "
 echo "===========================================================================" | lolcat
