@@ -232,6 +232,12 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Buat User")
+       clear
+       echo -e "===========================================================================" | lolcat
+       echo -e "                       >>>>>>>>>> Buat Akun SSH <<<<<<<<<<                 " | lolcat
+       echo -e "===========================================================================" | lolcat
+       echo -e " "
+       echo -e " "
        read -p "Enter username: " uname
        read -p "Enter password: " pass
        read -p "Kadaluarsa (Berapa Hari): " masaaktif
