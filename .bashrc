@@ -136,8 +136,8 @@ echo -e "#======================================================================
 echo -e "#                       <<<<<   MY CONTACT PERSON  >>>>>                    #" | lolcat
 echo -e "#                        BBM :D69F79CA WA :082228644803                     #" | lolcat
 echo -e "#                                                                           #" | lolcat
-echo -e "# 	                        -MitraSSH Official-                          #" | lolcat
-echo -e "#                          Copyright @ Aidika Akbar 2017                    #" | lolcat 
+echo -e "# 	                       -MitraSSH Official-                           #" | lolcat
+echo -e "#                        Copyright @ Aidika Akbar 2017                      #" | lolcat 
 echo -e "#                                                                           #" | lolcat 
 echo -e "#===========================================================================#" | lolcat
 echo -e "  Ketik 'menu' untuk memberikan perintah pada VPS Anda" | lolcat 
