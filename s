@@ -18,27 +18,29 @@ useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $uname
 exp="$(chage -l $uname | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$pass\n$pass\n"|passwd $uname &> /dev/null
 echo -e ""| lolcat
-echo -e "|      Informasi Akun Baru SSH      |" | lolcat
-echo -e "==========================================" | lolcat
-echo -e "     Host: $myip" | lolcat
-echo -e "     Username: $uname" | lolcat
-echo -e "     Password: $pass                     " | lolcat
-echo -e "     Port dropbear: 443,109              " | lolcat
-echo -e "     Port openSSH: 22,80                 " | lolcat
-echo -e "     Port squid: 8080                    " | lolcat
-echo -e "     Port OpenVPN default: 55            " | lolcat
-echo -e "     Auto kill user maximal login 2      " | lolcat
-echo -e "-------------------------------------------" | lolcat
-echo -e "     Aktif Sampai: $exp                  " | lolcat
-echo -e "===========================================" | lolcat
-echo -e " DILARANG: DDOS/TORRENT/HACK/ILEGAL CONTENT"| lolcat
-echo -e "===========================================" | lolcat
+echo -e "=========================================" | lolcat
+echo -e ">>>>          Data Akun SSH          <<<<" | lolcat
+echo -e "=========================================" | lolcat
+echo -e "  Host: $myip" | lolcat
+echo -e "  Username: $uname" | lolcat
+echo -e "  Password: $pass                     " | lolcat
+echo -e "  Port Dropbear: 443,80,22507,2000,2017" | lolcat
+echo -e "  Port OpenSSH: 22,90                 " | lolcat
+echo -e "  Port Squid: 8080,3128               " | lolcat
+echo -e "-----------------------------------------" | lolcat
+echo -e "    Masa Aktif Sampai: $exp " | lolcat
 myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
-echo -e "   Config OVPN:                          "| lolcat
-echo -e "   http://$myip:81/1194-client.ovpn          " | lolcat
-echo -e "-------------------------------------------" | lolcat
-echo -e ""
-echo -e ""
+echo -e "-----------------------------------------" | lolcat
+echo -e "             Peraturan Server            " | lolcat
+echo -e "1. Dilarang Carding, Torrent, DDOS,Spamming " | lolcat 
+echo -e "   dan Ilegal Lainnya " | lolcat
+echo -e "2. Max Login 2 Bitvise/Plink " |lolcat
+echo -e "-----------------------------------------" | lolcat
+echo -e "     PELANGGARAN YANG DILAKUKAN AKAN " | lolcat
+echo -e "        MEMBUAT AKUN ANDA DIBANNED" | lolcat
+echo -e "-------------- TERIMA KASIH -------------" | lolcat
+echo -e " "
+echo -e "========== Modified By DikaNET ==========" | lolcat
 }
 function renew_user() {
 	echo "Kadaluarsa User: $uname Di Perbarui Sampai: $expdate"| lolcat;
