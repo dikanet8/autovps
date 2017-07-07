@@ -126,9 +126,8 @@ red='\e[1;32m'
 #echo -e $green
 #echo -e $red     '_________________<☠ CINTA JANGAN BIARKAN SEDIH ☠>_________________'
 clear
-echo -e "=============================================================================" | lolcat
-echo -e "+++                           WELLCOME TO MY SERVER                       +++" | lolcat
-echo -e "=============================================================================" | lolcat
+echo -e "                               WELLCOME TO MY SERVER                         " | boxes -d peek | lolcat
+echo -e "----------------------------------------------------------------------------------" | lolcat
 echo -e "                                                                             " | lolcat
 echo -e "#=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=#" | lolcat
 echo -e "#                       Script Premium Modefied BY: DikaNET                 #" | lolcat
