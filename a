@@ -223,7 +223,7 @@ echo " "
 echo "                               Informasi Server                            " | lolcat
 echo " IP\Host : $myip
 echo "===========================================================================" | lolcat
-echo "                        >>>>>>>>>> Menu Premium <<<<<<<<<<                 " | lolcat
+echo ">>>>>>>>>>                         Menu Premium                  <<<<<<<<<<" | lolcat
 echo "===========================================================================" | lolcat                     
 PS3='Silahkan ketik Nomor pilihan anda lalu tekan ENTER: '
 options=("Buat User" "Trial" "Perbarui User" "Semua User" "Hapus User" "Cek Login" "On Kill Multi Login" "Off Kill Multi Login" "User Belum Exp" "User Sudah Exp" "Restart Server" "Ganti Password User" "Ganti Password VPS" "Used Data By Users" "bench-network" "Ram Status" "Bersihkan cache ram" "Ganti Port OpenVPN" "Ganti Port Dropbear" "Ganti Port Openssh" "Ganti Port Squid3" "Speedtest" "Edit Banner Login" "Lihat Lokasi User" "Quit")
@@ -231,13 +231,12 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Buat User")
-       echo -e " "
-       echo -e " "
-       echo -e "==========================================================================="| lolcat
-       echo -e "<<<<<<<<<                        Buat Akun SSH                  >>>>>>>>> "| lolcat
-       echo -e "==========================================================================="| lolcat
-       echo -e " "
-       echo -e " "
+       echo " "
+       echo "==========================================================================="| lolcat
+       echo "<<<<<<<<<                        Buat Akun SSH                  >>>>>>>>> "| lolcat
+       echo "==========================================================================="| lolcat
+       echo " "
+       echo " "
        read -p "Masukkan Username: " uname
        read -p "Masukkan Password: " pass
        read -p "Kadaluarsa (Berapa Hari): " masaaktif
@@ -245,13 +244,12 @@ do
 	    break
             ;;
 	"Trial")
-	echo -e " "
-        echo -e " "
-	echo -e "==========================================================================="| lolcat
-        echo -e "<<<<<<<<<                      Buat Akun Trial                   >>>>>>>>> "| lolcat
-        echo -e "==========================================================================="| lolcat
-        echo -e " "
-        echo -e " "
+        echo " "
+	echo " ===========================================================================" | lolcat
+        echo " <<<<<<<<<                      Buat Akun Trial                    >>>>>>>>>" | lolcat
+        echo " ===========================================================================" | lolcat
+        echo " "
+        echo " "
 	uname=trial-`</dev/urandom tr -dc X-Z0-9 | head -c4`
 	masaaktif="1"
 	pass=`</dev/urandom tr -dc a-f0-9 | head -c9`
@@ -260,39 +258,36 @@ do
 	break
 	;;
         "Perbarui User")
-	echo -e " "
-        echo -e " "
-	echo -e "==========================================================================="| lolcat
-        echo -e "<<<<<<<<<                     Perbarui User SSH                  >>>>>>>>> "| lolcat
-        echo -e "==========================================================================="| lolcat
-        echo -e " "
-        echo -e " "
+            echo " "
+	    echo "==========================================================================="| lolcat
+            echo "<<<<<<<<<                     Perbarui User SSH                  >>>>>>>>> "| lolcat
+            echo "==========================================================================="| lolcat
+            echo " "
+            echo " "
             read -p "Masukkan Username yg di perbarui: " uname
             read -p "Aktif sampai tanggal Thn-Bln-Hr(YYYY-MM-DD): " expdate
             renew_user | boxes -d dog | lolcat
             break
             ;;
 	 "Semua User")
-	  echo -e " "
-          echo -e " "
-	    echo -e "==========================================================================="| lolcat
-            echo -e "<<<<<<<<<                        Buat Akun SSSH                  >>>>>>>>> "| lolcat
-            echo -e "==========================================================================="| lolcat
-            echo -e " "
-            echo -e " "
+	    echo " "
+	    echo "==========================================================================="| lolcat
+            echo "<<<<<<<<<                        Buat Akun SSSH                  >>>>>>>>> "| lolcat
+            echo "==========================================================================="| lolcat
+            echo " "
+            echo " "
 	    user-list
 	    break
 	    ;;
         "Hapus User")
-	    echo -e " "
-            echo -e " "
-	    echo -e "==========================================================================="| lolcat
-            echo -e "<<<<<<<<<                       Hapus Akun SSSH                  >>>>>>>>> "| lolcat
-            echo -e "==========================================================================="| lolcat
-            echo -e " "
-            echo -e " "
+	    echo " "
+	    echo "==========================================================================="| lolcat
+            echo "<<<<<<<<<                       Hapus Akun SSSH                  >>>>>>>>> "| lolcat
+            echo "==========================================================================="| lolcat
+            echo " "
+            echo " "
 	    user-list
-	    echo ""
+	    echo " "
             read -p "Ketik user (di atas) yang akan di hapus: " uname 
 	    echo -e "User $uname sukses dihapus MBAH!!!" | boxes -d boy | lolcat
             delete_user
