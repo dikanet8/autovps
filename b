@@ -214,11 +214,7 @@ echo "+=========================================================================
 echo "+                     Script Premium Modified by DikaNET                  +"| lolcat 
 echo "+              Contact Me >> BBM :D69F79CA or WA :082228644803            +"| lolcat
 echo "+                                                                         +"| lolcat 
-echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+"| lolcat
-echo " "
-echo "==========================================================================="| lolcat
-echo "                        >>>>>>>>>> Menu Premium <<<<<<<<<<                 "| lolcat
-echo "==========================================================================="| lolcat                      
+echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+"| lolcat                     
 PS3='Silahkan ketik Nomor pilihan anda lalu tekan ENTER: '
 options=("Buat User" "Trial" "Perbarui User" "Semua User" "Hapus User" "Cek Login" "On Kill Multi Login" "Off Kill Multi Login" "User Belum Exp" "User Sudah Exp" "Restart Server" "Ganti Password User" "Ganti Password VPS" "Used Data By Users" "bench-network" "Ram Status" "Bersihkan cache ram" "Ganti Port OpenVPN" "Ganti Port Dropbear" "Ganti Port Openssh" "Ganti Port Squid3" "Speedtest" "Edit Banner Login" "Lihat Lokasi User" "Quit")
 select opt in "${options[@]}"
