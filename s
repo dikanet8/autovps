@@ -221,7 +221,7 @@ echo "+                       BBM :D69F79CA WA :082228644803                    
 echo "+                                                                         +" | lolcat
 echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
 echo " "
-echo "                             Informasi Server                              " | lolcat
+echo "                             Informasi Server Anda                              " | lolcat
 echo " IP\Host : $myip " | lolcat
 echo "===========================================================================" | lolcat
 echo "                        >>>>>>>>>> Menu Premium <<<<<<<<<<                 " | lolcat
