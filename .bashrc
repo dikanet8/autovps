@@ -126,8 +126,10 @@ red='\e[1;32m'
 #echo -e $green
 #echo -e $red     '_________________<☠ CINTA JANGAN BIARKAN SEDIH ☠>_________________'
 clear
-echo -e "                               WELLCOME TO MY SERVER                         " | boxes -d peek | lolcat
-echo -e "----------------------------------------------------------------------------------" | lolcat
+echo -e "=============================================================================" | lolcat  
+echo -e "                              WELLCOME TO MY SERVER                          " | boxes -d peek | lolcat
+echo -e " "
+echo -e "=============================================================================" | lolcat
 echo -e "                                                                             " | lolcat
 echo -e "#=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=#" | lolcat
 echo -e "#                       Script Premium Modefied BY: DikaNET                 #" | lolcat
@@ -135,7 +137,7 @@ echo -e "#======================================================================
 echo -e "#                       <<<<<   MY CONTACT PERSON  >>>>>                    #" | lolcat
 echo -e "#                        BBM :D69F79CA WA :082228644803                     #" | lolcat
 echo -e "#                                                                           #" | lolcat
-echo -e "# 	                                                                     #" | lolcat
+echo -e "# 	                                                                  #" | lolcat
 echo -e "#                              -MitraSSH Official-                          #" | lolcat 
 echo -e "#                         Copyright @ Aidika Akbar 2017                     #" | lolcat 
 echo -e "#===========================================================================#" | lolcat
