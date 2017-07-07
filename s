@@ -9,11 +9,6 @@ echo
 
 function create_user() {
 #myip=`dig +short myip.opendns.com @resolver1.opendns.com`
-clear
-echo -e ""| lolcat
-echo -e ""| lolcat
-echo -e ""| lolcat
-echo -e ""| lolcat
 useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $uname
 exp="$(chage -l $uname | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$pass\n$pass\n"|passwd $uname &> /dev/null
@@ -254,16 +249,34 @@ do
 	break
 	;;
         "Perbarui User")
+	    clear
+            echo -e "===========================================================================" | lolcat
+            echo -e "                      >>>>>>>>>> Renew Akun SSH <<<<<<<<<<                 " | lolcat
+            echo -e "===========================================================================" | lolcat
+            echo -e " "
+            echo -e " "
             read -p "Enter username yg di perbarui: " uname
             read -p "Aktif sampai tanggal Thn-Bln-Hr(YYYY-MM-DD): " expdate
             renew_user | boxes -d dog | lolcat
             break
             ;;
 	 "Semua User")
+	    clear
+            echo -e "===========================================================================" | lolcat
+            echo -e "                       >>>>>>>>>> Buat Akun SSH <<<<<<<<<<                 " | lolcat
+            echo -e "===========================================================================" | lolcat
+            echo -e " "
+            echo -e " "
 	    user-list
 	    break
 	    ;;
         "Hapus User")
+	    clear
+            echo -e "===========================================================================" | lolcat
+            echo -e "                      >>>>>>>>>> Hapus Akun SSH <<<<<<<<<<                 " | lolcat
+            echo -e "===========================================================================" | lolcat
+            echo -e " "
+            echo -e " "
 	    user-list
 	    echo ""
             read -p "Ketik user (di atas) yang akan di hapus: " uname 
@@ -272,6 +285,12 @@ do
 	    break
             ;;
 	  "Monitor User Login")
+	  clear
+          echo -e "===========================================================================" | lolcat
+          echo -e "                   >>>>>>>>>> Cek Login Akun SSH <<<<<<<<<<                " | lolcat
+          echo -e "===========================================================================" | lolcat
+          echo -e " "
+          echo -e " "
 	  monssh2
 	  break
 	  ;;
