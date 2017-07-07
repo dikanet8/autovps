@@ -107,11 +107,11 @@ do
 done
 
 
-echo "--------------------------------------------------------"| lolcat
+echo "-------------------------------------------------------------"| lolcat
 data=( `ps aux | grep "\[priv\]" | sort -k 72 | awk '{print $2}'`);
 
-echo "==================[ CEK LOGIN OpenSSH ]================="| lolcat
-echo "--------------------------------------------------------"| lolcat
+echo "====================[ CEK LOGIN OpenSSH ]==================="| lolcat
+echo "-------------------------------------------------------------| lolcat
 for PID in "${data[@]}"
 do
         #echo "check $PID";
@@ -124,10 +124,10 @@ do
         fi
 done
 
-echo "--------------------------------------------------------"| lolcat
-echo -e "========[ MONITOR PENGGUNA DROPBEAR & OpenSSH]=========="| lolcat
+echo "-------------------------------------------------------------"| lolcat
+echo -e "=========[ MONITOR PENGGUNA DROPBEAR & OpenSSH]==========="| lolcat
 echo -e " "
-echo -e "================= Modified By DikaNET =================="| lolcat
+echo -e "================== Modified By DikaNET ==================="| lolcat
 }
 
 function used_data(){
