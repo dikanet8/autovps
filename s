@@ -208,8 +208,8 @@ echo "-------------------------------" | lolcat
 
 clear
 echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
-echo "+                               <<<<SELAMAT DATANG>>>>                          +" | lolcat
-echo "+================================================================================+ | lolcat
+echo "+                                  SELAMAT DATANG                               +" | lolcat
+echo "+===============================================================================+" | lolcat
 echo "+                                                                               +" | lolcat
 echo "+                        Script Premium Modified by DikaNET                     +" | lolcat 
 echo "+                              <<= Contact Person =>>                           +" | lolcat
