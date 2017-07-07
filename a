@@ -10,10 +10,11 @@ echo
 function create_user() {
 #myip=`dig +short myip.opendns.com @resolver1.opendns.com`
 clear
-echo -e ""| lolcat
-echo -e ""| lolcat
-echo -e ""| lolcat
-echo -e ""| lolcat
+echo -e "==========================================================================="| lolcat
+echo -e "<<<<<<<<<                        Buat Akun SSSH                  >>>>>>>>> "| lolcat
+echo -e "==========================================================================="| lolcat
+echo -e " "
+echo -e " "
 useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $uname
 exp="$(chage -l $uname | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$pass\n$pass\n"|passwd $uname &> /dev/null
@@ -92,6 +93,11 @@ function not_expired_users(){
 }
 
 function monssh2(){
+echo "===========================================================================" | lolcat
+echo ">>>>>>>>>                     Cek Login Akun SSH                 <<<<<<<<<<" | lolcat
+echo "===========================================================================" | lolcat
+echo " "
+echo " "
 echo ""| lolcat
 echo "|   Tgl-Jam    | PID   |   User Name  |      Dari IP      |"| boxes -d peek | lolcat
 echo "-------------------------------------------------------------"| lolcat
@@ -147,6 +153,11 @@ echo -e "Sekian...!!!"| lolcat
 }
 
 function user-list(){
+echo "===============================================================================" | lolcat
+echo ">>>>>>>>>                    Daftar Akun SSH Aktif                    <<<<<<<<<" | lolcat
+echo "===============================================================================" | lolcat
+echo " "
+echo " "
 echo "--------------------------------------------------"| lolcat
 echo "BIL  USERNAME        STATUS       TGL KEDALUARSA   "| lolcat
 echo "--------------------------------------------------"| lolcat
@@ -226,7 +237,6 @@ echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
 echo " "
 echo "                               Informasi Server                            " | lolcat
 echo " IP\Host : $myip
-echo " Date    : $date
 echo "===========================================================================" | lolcat
 echo "                        >>>>>>>>>> Menu Premium <<<<<<<<<<                 " | lolcat
 echo "===========================================================================" | lolcat                     
@@ -236,8 +246,9 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Buat User")
-       read -p "Enter username: " uname
-       read -p "Enter password: " pass
+       clear
+       read -p "Masukkan Username: " uname
+       read -p "Masukkan Password: " pass
        read -p "Kadaluarsa (Berapa Hari): " masaaktif
        clear
        create_user
@@ -252,12 +263,13 @@ do
 	break
 	;;
         "Perbarui User")
-            read -p "Enter username yg di perbarui: " uname
+            read -p "Masukkan Username yg di perbarui: " uname
             read -p "Aktif sampai tanggal Thn-Bln-Hr(YYYY-MM-DD): " expdate
             renew_user | boxes -d dog | lolcat
             break
             ;;
 	 "Semua User")
+	    clear
 	    user-list
 	    break
 	    ;;
