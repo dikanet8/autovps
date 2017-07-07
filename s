@@ -207,21 +207,21 @@ echo "-------------------------------" | lolcat
 
 
 clear
-echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
-echo "+                                  SELAMAT DATANG                               +" | lolcat
-echo "+===============================================================================+" | lolcat
-echo "+                                                                               +" | lolcat
-echo "+                        Script Premium Modified by DikaNET                     +" | lolcat 
-echo "+                              <<= Contact Person =>>                           +" | lolcat
-echo "+                         BBM :D69F79CA | WA :082228644803                      +" | lolcat
-echo "+                                                                               +" | lolcat
-echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+" | lolcat
+echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+==+=+=+=+=+=+=+" | lolcat
+echo "+                                  SELAMAT DATANG                              +" | lolcat
+echo "+==============================================================================+" | lolcat
+echo "+                                                                              +" | lolcat
+echo "+                        Script Premium Modified by DikaNET                    +" | lolcat 
+echo "+                              <<= Contact Person =>>                          +" | lolcat
+echo "+                         BBM :D69F79CA | WA :082228644803                     +" | lolcat
+echo "+                                                                              +" | lolcat
+echo "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=++=+=+=+=+=+" | lolcat
 echo " "
-echo "                                Informasi Server Anda                            " | lolcat
+echo "                               Informasi Server Anda                            " | lolcat
 echo " IP\Host : $myip " | lolcat
-echo "=================================================================================" | lolcat
-echo "                           >>>>>>>>>> Menu Premium <<<<<<<<<<                    " | lolcat
-echo "=================================================================================" | lolcat
+echo "================================================================================" | lolcat
+echo "                          >>>>>>>>>> Menu Premium <<<<<<<<<<                    " | lolcat
+echo "================================================================================" | lolcat
 PS3='Silahkan ketik nomor pilihan anda lalu tekan ENTER: '
 options=("Buat User" "Trial" "Perbarui User" "Semua User" "Hapus User" "Monitor User Login" "On Kill Multi Login" "Off Kill Multi Login" "User Belum Exp" "User Sudah Exp" "Restart Server" "Ganti Password User" "Ganti Password VPS" "Used Data By Users" "bench-network" "Ram Status" "Bersihkan cache ram" "Ganti Port OpenVPN" "Ganti Port Dropbear" "Ganti Port Openssh" "Ganti Port Squid3" "Speedtest" "Edit Banner Login" "Lihat Lokasi User" "Quit")
 select opt in "${options[@]}"
