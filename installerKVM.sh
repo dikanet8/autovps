@@ -80,6 +80,28 @@ wget https://raw.githubusercontent.com/AidikaAA/autovps/master/.bashrc
 apt-get install ruby -y
 gem install lolcat
 
+# install screenfetch
+cd
+
+#touch screenfetch-dev
+cd
+wget https://github.com/KittyKatt/screenFetch/archive/master.zip
+apt-get install -y unzip
+unzip master.zip
+mv screenFetch-master/screenfetch-dev /usr/bin
+cd /usr/bin
+mv screenfetch-dev screenfetch
+chmod +x /usr/bin/screenfetch
+chmod 755 screenfetch
+cd
+echo "clear" >> .bash_profile
+echo "screenfetch" >> .bash_profile
+#wget -O screenfetch-dev "https://raw.githubusercontent.com/rizal180499/Auto-Installer-VPS/master/conf/screenfetch-dev"
+#mv screenfetch-dev /usr/bin/screenfetch
+#chmod +x /usr/bin/screenfetch
+#echo "clear" >> .profile
+#echo "screenfetch" >> .profile
+
 # nginx
 apt-get -y install nginx php5-fpm php5-cli
 rm /etc/nginx/sites-enabled/default
