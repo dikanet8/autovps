@@ -270,8 +270,8 @@ do
             echo -e "-------------------------------------------------------------------------------" | lolcat
             echo -e " "
             echo -e " "
-            read -p "Enter username yg di perbarui: " uname
-            read -p "Aktif sampai tanggal Thn-Bln-Hr(YYYY-MM-DD): " expdate
+            read -p "Enter username yg di perbarui: "uname
+            read -p "Aktif sampai tanggal Thn-Bln-Hr(YYYY-MM-DD): "expdate
             renew_user | boxes -d dog | lolcat
             break
             ;;
@@ -308,7 +308,7 @@ do
             echo -e " "
 	    user-list
 	    echo ""
-            read -p "Ketik user (di atas) yang akan di hapus: " uname 
+            read -p "Ketik user (di atas) yang akan di hapus: "uname 
 	    echo -e "User $uname sukses dihapus boss!!!" | boxes -d boy | lolcat
             delete_user
 	    break
@@ -386,8 +386,8 @@ do
                   echo -e "------------------------------------------------------------------------------" | lolcat
                   echo -e " "
                   echo -e " "
-		read -p "Ketik user yang akan di ganti passwordnya: " uname
-		read -p "Silahkan isi passwordnya: " pass
+		read -p "Ketik user yang akan di ganti passwordnya: "uname
+		read -p "Silahkan isi passwordnya: "pass
 		echo "$uname:$pass" | chpasswd
 		echo "Sukses gan!!! Password $uname user ente sudah di ganti..."| boxes -d peek | lolcat
 		break
