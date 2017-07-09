@@ -13,29 +13,30 @@ useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $uname
 exp="$(chage -l $uname | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$pass\n$pass\n"|passwd $uname &> /dev/null
 echo -e ""| lolcat
-echo -e "=========================================" | lolcat
+echo -e "-----------------------------------------" | lolcat
 echo -e ">>>>          Data Akun SSH          <<<<" | lolcat
-echo -e "=========================================" | lolcat
+echo -e "-----------------------------------------" | lolcat
 echo -e "  Host: $myip" | lolcat
 echo -e "  Username: $uname" | lolcat
 echo -e "  Password: $pass                     " | lolcat
 echo -e "  Port Dropbear: 443,80,22507,2000,2017" | lolcat
 echo -e "  Port OpenSSH: 22,90                 " | lolcat
 echo -e "  Port Squid: 8080,3128               " | lolcat
+echo -e "  Config OVPN: $myip:81/1194-client.ovpn
 echo -e "-----------------------------------------" | lolcat
 echo -e "    Masa Aktif Sampai: $exp " | lolcat
 myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
 echo -e "-----------------------------------------" | lolcat
 echo -e "             Peraturan Server            " | lolcat
-echo -e "1. Dilarang Carding, Torrent, DDOS,Spamming " | lolcat 
+echo -e "1. Dilarang Carding, Torrent,DDOS,Spamming " | lolcat 
 echo -e "   dan Ilegal Lainnya " | lolcat
 echo -e "2. Max Login 2 Bitvise/Plink " |lolcat
 echo -e "-----------------------------------------" | lolcat
 echo -e "     PELANGGARAN YANG DILAKUKAN AKAN " | lolcat
-echo -e "        MEMBUAT AKUN ANDA DIBANNED" | lolcat
+echo -e "       MEMBUAT AKUN ANDA DIBANNED" | lolcat
 echo -e "-------------- TERIMA KASIH -------------" | lolcat
 echo -e " "
-echo -e "========== Modified By DikaNET ==========" | lolcat
+echo -e "===========Modified By DikaNET===========" | lolcat
 }
 function renew_user() {
 	echo "Kadaluarsa User: $uname Di Perbarui Sampai: $expdate"| lolcat;
@@ -223,12 +224,19 @@ echo "==========================================================================
 echo "                          >>>>>>>>>> Menu Premium <<<<<<<<<<                    " | lolcat
 echo "================================================================================" | lolcat
 PS3='Silahkan ketik nomor pilihan anda lalu tekan ENTER: '
-options=("Buat User" "Trial" "Perbarui User" "Semua User" "Hapus User" "Monitor User Login" "On Kill Multi Login" "Off Kill Multi Login" "User Belum Exp" "User Sudah Exp" "Restart Server" "Ganti Password User" "Ganti Password VPS" "Used Data By Users" "bench-network" "Ram Status" "Bersihkan cache ram" "Ganti Port OpenVPN" "Ganti Port Dropbear" "Ganti Port Openssh" "Ganti Port Squid3" "Speedtest" "Edit Banner Login" "Lihat Lokasi User" "Quit")
+options=("Buat Akun SSH" "Buat Akun Trial" "Tambah Masa Aktif" "Daftar Akun SSH" "Hapus Akun SSH" "Cek Login Akun SSH" "On Kill Multi Login" "Off Kill Multi Login" "Akun SSH Belum Exp" "Akun SSH Sudah Exp" "Restart Server" "Ganti Password Akun" "Ganti Password VPS" "Cek Penggunaan data by User" "Bench-network" "Status RAM" "Bersihkan Cache RAM" "Ganti Port OpenVPN" "Ganti Port Dropbear" "Ganti Port Openssh" "Ganti Port Squid3" "Speedtest" "Edit Banner Login" "Lihat Lokasi User" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
-        "Buat User")
-       clear
+        "Buat Akun SSH")
+       clear       
+       echo -e "+==============================================================================+" | lolcat
+       echo -e "+                                                                              +" | lolcat
+       echo -e "+                        Script Premium Modified by DikaNET                    +" | lolcat 
+       echo -e "+                              <<= Contact Person =>>                          +" | lolcat
+       echo -e "+                         BBM :D69F79CA | WA :082228644803                     +" | lolcat
+       echo -e "+                                                                              +" | lolcat
+       echo -e "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+" | lolcat
        echo -e "================================================================================" | lolcat
        echo -e "                          >>>>>>>>>> Buat Akun SSH <<<<<<<<<<                   " | lolcat
        echo -e "================================================================================" | lolcat
@@ -240,18 +248,25 @@ do
        create_user
 	    break
             ;;
-	"Trial")
+	"Buat Akun Trial")
 	uname=trial-`</dev/urandom tr -dc X-Z0-9 | head -c4`
 	masaaktif="1"
-	pass=`</dev/urandom tr -dc a-f0-9 | head -c9`
+	pass=`</dev/urandom tr -dc a-f0-9 | head -c5`
 	clear
 	create_user
 	break
 	;;
-        "Perbarui User")
-	    clear
+        "Tambah Masa Aktif")
+	    clear	   
+            echo -e "+==============================================================================+" | lolcat
+            echo -e "+                                                                              +" | lolcat
+            echo -e "+                        Script Premium Modified by DikaNET                    +" | lolcat 
+            echo -e "+                              <<= Contact Person =>>                          +" | lolcat
+            echo -e "+                         BBM :D69F79CA | WA :082228644803                     +" | lolcat
+            echo -e "+                                                                              +" | lolcat
+            echo -e "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+" | lolcat
             echo -e "================================================================================" | lolcat
-            echo -e "                          >>>>>>>>>> Renew Akun SSH <<<<<<<<<<                  " | lolcat
+            echo -e "                         >>>>>>>>>> Renew Akun SSH <<<<<<<<<<                   " | lolcat
             echo -e "================================================================================" | lolcat
             echo -e " "
             echo -e " "
@@ -260,18 +275,34 @@ do
             renew_user | boxes -d dog | lolcat
             break
             ;;
-	 "Semua User")
+	 "Daftar Akun SSH")
 	    clear
+	    echo -e "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+==+=+=+=+=+=+=+" | lolcat
+            echo -e "+                                  SELAMAT DATANG                              +" | lolcat
+            echo -e "+==============================================================================+" | lolcat
+            echo -e "+                                                                              +" | lolcat
+            echo -e "+                        Script Premium Modified by DikaNET                    +" | lolcat 
+            echo -e "+                              <<= Contact Person =>>                          +" | lolcat
+            echo -e "+                         BBM :D69F79CA | WA :082228644803                     +" | lolcat
+            echo -e "+                                                                              +" | lolcat
+            echo -e "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+" | lolcat
             echo -e "================================================================================" | lolcat
-            echo -e "                         >>>>>>>>>> Buat Akun SSH <<<<<<<<<<                    " | lolcat
+            echo -e "                        >>>>>>>>>> Daftar Akun SSH <<<<<<<<<<                   " | lolcat
             echo -e "================================================================================" | lolcat
             echo -e " "
             echo -e " "
 	    user-list
 	    break
 	    ;;
-        "Hapus User")
+        "Hapus Akun SSH")
 	    clear
+            echo -e "+==============================================================================+" | lolcat
+            echo -e "+                                                                              +" | lolcat
+            echo -e "+                        Script Premium Modified by DikaNET                    +" | lolcat 
+            echo -e "+                              <<= Contact Person =>>                          +" | lolcat
+            echo -e "+                         BBM :D69F79CA | WA :082228644803                     +" | lolcat
+            echo -e "+                                                                              +" | lolcat
+            echo -e "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+" | lolcat
             echo -e "================================================================================" | lolcat
             echo -e "                         >>>>>>>>>> Hapus Akun SSH <<<<<<<<<<                   " | lolcat
             echo -e "================================================================================" | lolcat
@@ -284,8 +315,15 @@ do
             delete_user
 	    break
             ;;
-	  "Monitor User Login")
+	  "Cek Login Akun SSH")
 	  clear
+	  echo -e "+==============================================================================+" | lolcat
+	  echo -e "+                                                                              +" | lolcat
+          echo -e "+                        Script Premium Modified by DikaNET                    +" | lolcat 
+          echo -e "+                              <<= Contact Person =>>                          +" | lolcat
+          echo -e "+                         BBM :D69F79CA | WA :082228644803                     +" | lolcat
+          echo -e "+                                                                              +" | lolcat
+          echo -e "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+" | lolcat
           echo -e "================================================================================" | lolcat
           echo -e "                      >>>>>>>>>> Cek Login Akun SSH <<<<<<<<<<                  " | lolcat
           echo -e "================================================================================" | lolcat
@@ -322,12 +360,42 @@ do
 	echo "AUTO KILL LOGIN,SUDAH SAYA MATIKAN BOS!!!" | boxes -d boy | lolcat
 	break
 	;;
-		"User Belum Exp")
-			not_expired_users | boxes -d dog | lolcat
+		"Daftar Akun SSH Aktif")
+		  clear
+	          echo -e "+==============================================================================+" | lolcat
+	          echo -e "+                                                                              +" | lolcat
+                  echo -e "+                        Script Premium Modified by DikaNET                    +" | lolcat 
+                  echo -e "+                              <<= Contact Person =>>                          +" | lolcat
+                  echo -e "+                         BBM :D69F79CA | WA :082228644803                     +" | lolcat
+                  echo -e "+                                                                              +" | lolcat
+                  echo -e "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+" | lolcat
+                  echo -e "================================================================================" | lolcat
+                  echo -e "                    >>>>>>>>>> Daftar Akun SSH Aktif <<<<<<<<<<                 " | lolcat
+                  echo -e "================================================================================" | lolcat
+                  echo -e " "
+                  echo -e " "
+		  echo -e "==============================================================" | lolcat
+			not_expired_users | | lolcat
+	                echo -e "==============================================================" | lolcat
 			break
 			;;
-		"User Sudah Exp")
-			expired_users | boxes -d dog | lolcat
+		"Daftar Akun SSH Expired")
+		  clear
+	          echo -e "+==============================================================================+" | lolcat
+	          echo -e "+                                                                              +" | lolcat
+                  echo -e "+                        Script Premium Modified by DikaNET                    +" | lolcat 
+                  echo -e "+                              <<= Contact Person =>>                          +" | lolcat
+                  echo -e "+                         BBM :D69F79CA | WA :082228644803                     +" | lolcat
+                  echo -e "+                                                                              +" | lolcat
+                  echo -e "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+" | lolcat
+                  echo -e "================================================================================" | lolcat
+                  echo -e "                   >>>>>>>>>> Daftar Akun SSH Expired <<<<<<<<<<                " | lolcat
+                  echo -e "================================================================================" | lolcat
+                  echo -e " "
+                  echo -e " "
+		  echo -e "==============================================================" | lolcat
+			expired_users | | lolcat
+		  echo -e "==============================================================" | lolcat
 			break
 			;;		
 		"Restart Server")
@@ -335,6 +403,19 @@ do
 			break
 			;;
 		"Ganti Password User")
+		  clear
+	          echo -e "+==============================================================================+" | lolcat
+	          echo -e "+                                                                              +" | lolcat
+                  echo -e "+                        Script Premium Modified by DikaNET                    +" | lolcat 
+                  echo -e "+                              <<= Contact Person =>>                          +" | lolcat
+                  echo -e "+                         BBM :D69F79CA | WA :082228644803                     +" | lolcat
+                  echo -e "+                                                                              +" | lolcat
+                  echo -e "+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=++=+=+=+=+=+=+" | lolcat
+                  echo -e "================================================================================" | lolcat
+                  echo -e "                   >>>>>>>>>> Daftar Akun SSH Expired <<<<<<<<<<                " | lolcat
+                  echo -e "================================================================================" | lolcat
+                  echo -e " "
+                  echo -e " "
 		read -p "Ketik user yang akan di ganti passwordnya: " uname
 		read -p "Silahkan isi passwordnya: " pass
 		echo "$uname:$pass" | chpasswd
@@ -347,20 +428,20 @@ do
 		echo "Ganti PW VPS ente sukses gan !!!"| boxes -d boy | lolcat
 			break
 			;;
-		"Used Data By Users")
+		"Cek Penggunaan Data by User")
 			used_data | boxes -d boy | lolcat
  			break
 			;;
-		"bench-network")
+		"Bench-network")
 			bench-network2 | lolcat
 			break
 			;;
-		"Ram Status")
+		"Status RAM")
 			free -h | grep -v + > /tmp/ramcache
 			cat /tmp/ramcache | grep -v "Swap"
 			break
 			;;
-		"Bersihkan cache ram")
+		"Bersihkan Cache RAM")
 	                echo 3 > /proc/sys/vm/drop_caches && swapoff -a && swapon -a
 			echo "SUKSES..!!!Cache ram anda sudah di bersihkan." | boxes -d spring | lolcat
 		        break
