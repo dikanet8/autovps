@@ -242,9 +242,9 @@ do
        echo -e "------------------------------------------------------------------------------" | lolcat
        echo -e " "
        echo -e " "
-       read -p  "Enter username: " uname
-       read -p  "Enter password: " pass
-       read -p  "Kadaluarsa: " masaaktif
+       read -p  "Enter username: "uname
+       read -p  "Enter password: "pass
+       read -p  "Kadaluarsa: "masaaktif
        create_user
 	    break
             ;;
