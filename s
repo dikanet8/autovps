@@ -221,7 +221,7 @@ echo " "
 echo "                               Informasi Server Anda                            " | lolcat
 echo " IP\Host : $myip " | lolcat
 echo "================================================================================" | lolcat
-echo "                          >>>>>>>>>> Menu Premium <<<<<<<<<<                    " | lolcat
+echo "                             >>>>>>> Menu Premium <<<<<<<                       " | lolcat
 echo "================================================================================" | lolcat
 PS3='Silahkan ketik nomor pilihan anda lalu tekan ENTER: '
 options=("Buat Akun SSH" "Buat Akun Trial" "Tambah Masa Aktif" "Daftar Akun SSH" "Hapus Akun SSH" "Cek Login Akun SSH" "On Kill Multi Login" "Off Kill Multi Login" "Akun SSH Belum Exp" "Akun SSH Sudah Exp" "Restart Server" "Ganti Password Akun" "Ganti Password VPS" "Cek Penggunaan data by User" "Bench-network" "Status RAM" "Bersihkan Cache RAM" "Ganti Port OpenVPN" "Ganti Port Dropbear" "Ganti Port Openssh" "Ganti Port Squid3" "Speedtest" "Edit Banner Login" "Lihat Lokasi User" "Quit")
